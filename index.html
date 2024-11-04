@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Quantidade Mensal de Caixa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <h1>Simulador de Quantidade Mensal de Caixa</h1>
+        
+        <label for="meta-mensal">Quantidade (Caixa Unitária):</label>
+        <input type="number" id="meta-mensal" placeholder="Digite a meta mensal" oninput="calcularTabela()">
+        
+        <h2>Distribuição por Família</h2>
+        <table id="tabela-resultados">
+            <thead>
+                <tr>
+                    <th style="background-color: #009639; color: white; text-align: center;">Família</th>
+                    <th style="background-color: #009639; color: white; text-align: center;">Caixa Física</th>
+                    <th style="background-color: #009639; color: white; text-align: center;">Pallet</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <div class="mensagem-final">
+            Vai com tudo! Boas vendas!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
